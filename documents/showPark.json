@@ -1,0 +1,17 @@
+{
+    "type": "APL",
+    "version": "1.4",
+    "mainTemplate": {
+      "parameters": [],
+      "items": [
+        {
+          "type": "Image",
+          "source": "https://jlombar.github.io/PartyGameImages/parque.jpg",
+          "width": "100vw",
+          "height": "100vh",
+          "scale": "best-fill"
+        }
+      ]
+    }
+  }
+  

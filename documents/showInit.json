@@ -1,0 +1,56 @@
+{
+    "type": "APL",
+    "version": "1.1",
+    "theme": "light",
+    "mainTemplate": {
+        "parameters": [],
+        "items": [
+            {
+                "type": "Frame",
+                "width": "100vw",
+                "height": "100vh",
+                "background": "#ff5ec6",
+                "items": [
+                    {
+                        "type": "Container",
+                        "direction": "column",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                        "items": [
+                            {
+                                "text": "🎉 ~ PARTY VOICE ~ 🎉",
+                                "fontSize": "56dp",
+                                "fontWeight": "700",
+                                "color": "#FFFFFF",
+                                "textAlign": "center",
+                                "fontStyle": "normal",
+                                "layoutDirection": "inherit",
+                                "type": "Text",
+                                "paddingBottom": 30
+                            },
+                            {
+                                "type": "Frame",
+                                "background": "#ffffff22",
+                                "borderRadius": "20dp",
+                                "padding": 20,
+                                "items": [
+                                    {
+                                        "type": "Text",
+                                        "id": "wordText",
+                                        "text": "🎮 ¡BIENVENIDOS!\nLA PARTIDA ESTÁ A PUNTO DE COMENZAR",
+                                        "fontSize": "30dp",
+                                        "fontWeight": "700",
+                                        "color": "#FFFFFF",
+                                        "textAlign": "center"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

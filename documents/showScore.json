@@ -1,0 +1,68 @@
+{
+  "type": "APL",
+  "version": "1.6",
+  "theme": "light",
+  "import": [
+    {
+      "name": "alexa-layouts",
+      "version": "1.3.0"
+    }
+  ],
+  "mainTemplate": {
+    "parameters": ["scoreData"],
+    "items": [
+      {
+        "type": "Frame",
+        "width": "100vw",
+        "height": "100vh",
+        "background": "#f25fc1",
+        "items": [
+          {
+            "type": "Container",
+            "width": "100vw",
+            "height": "100vh",
+            "alignItems": "center",
+            "justifyContent": "center",
+            "direction": "column",
+            "items": [
+              {
+                "type": "Text",
+                "text": "Puntuación",
+                "fontSize": "50dp",
+                "fontWeight": "bold",
+                "color": "#FFFFFF",
+                "textAlign": "center",
+                "paddingBottom": "10dp"
+              },
+              {
+                "type": "AlexaDivider",
+                "width": "80vw",
+                "color": "#000000",
+                "thickness": "10dp",
+                "paddingBottom": 30
+              },
+              {
+                "type": "Sequence",
+                "scrollDirection": "vertical",
+                "width": "100vw",
+                "height": "60vh",
+                "data": "${scoreData.scores}",
+                "items": [
+                  {
+                    "type": "Text",
+                    "text": "${data.name}: ${data.score} puntos",
+                    "fontSize": "28dp",
+                    "fontWeight": "bold",
+                    "color": "#FFFFFF",
+                    "textAlign": "center",
+                    "paddingBottom": "10dp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

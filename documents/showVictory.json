@@ -1,0 +1,54 @@
+{
+    "type": "APL",
+    "version": "1.1",
+    "theme": "light",
+    "mainTemplate": {
+        "parameters": ["victoryData"],
+        "items": [
+            {
+                "type": "Frame",
+                "width": "100vw",
+                "height": "100vh",
+                "background": "#32d74b",
+                "items": [
+                    {
+                        "type": "Container",
+                        "direction": "column",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "text": "🏆 ¡VICTORIA! 🏆",
+                                "fontSize": "56dp",
+                                "fontWeight": "700",
+                                "color": "#FFFFFF",
+                                "textAlign": "center",
+                                "paddingBottom": 30
+                            },
+                            {
+                                "type": "Frame",
+                                "background": "#ffffff22",
+                                "borderRadius": "20dp",
+                                "padding": 20,
+                                "items": [
+                                    {
+                                        "type": "Text",
+                                        "id": "victoryText",
+                                        "text": "🎊 ¡FELICIDADES ${victoryData.name}!\nHAS GANADO LA PARTIDA",
+                                        "fontSize": "30dp",
+                                        "fontWeight": "700",
+                                        "color": "#FFFFFF",
+                                        "textAlign": "center"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

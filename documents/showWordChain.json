@@ -1,0 +1,60 @@
+{
+    "type": "APL",
+    "version": "1.6",
+    "theme": "light",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.3.0"
+        }
+    ],
+    "mainTemplate": {
+        "parameters": [],
+        "items": [
+            {
+                "type": "Frame",
+                "width": "100vw",
+                "height": "100vh",
+                "background": "#f25fc1",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "alignItems": "center",
+                        "justifyContent": "center",
+                        "direction": "column",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "text": "Palabras encadenadas",
+                                "fontSize": "50dp",
+                                "fontWeight": "bold",
+                                "color": "#FFFFFF",
+                                "textAlign": "center",
+                                "paddingBottom": 10
+                            },
+                            {
+                                "type": "AlexaDivider",
+                                "entities": "dark",
+                                "width": "80vw",
+                                "color": "#000000",
+                                "thickness": "10dp",
+                                "paddingBottom": 30
+                            },
+                            {
+                                "type": "Text",
+                                "id": "chainText",
+                                "text": "¡Todavía no habéis dicho palabras!",
+                                "fontSize": "30dp",
+                                "fontWeight": "bold",
+                                "color": "#FFFFFF",
+                                "textAlign": "center"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

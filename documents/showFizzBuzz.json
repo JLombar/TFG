@@ -1,0 +1,85 @@
+{
+    "type": "APL",
+    "version": "1.6",
+    "theme": "light",
+    "import": [
+      {
+        "name": "alexa-layouts",
+        "version": "1.3.0"
+      }
+    ],
+    "mainTemplate": {
+      "parameters": [],
+      "items": [
+        {
+          "type": "Frame",
+          "width": "100vw",
+          "height": "100vh",
+          "background": "#f25fc1",
+          "items": [
+            {
+              "type": "Container",
+              "width": "100vw",
+              "height": "100vh",
+              "alignItems": "center",
+              "justifyContent": "center",
+              "direction": "column",
+              "items": [
+                {
+                  "type": "Text",
+                  "text": "Fizz Buzz",
+                  "fontSize": "50dp",
+                  "fontWeight": "bold",
+                  "color": "#FFFFFF",
+                  "textAlign": "center",
+                  "paddingBottom": "10dp"
+                },
+                {
+                  "type": "AlexaDivider",
+                  "entities": "dark",
+                  "width": "80vw",
+                  "color": "#000000",
+                  "thickness": "10dp",
+                  "paddingBottom": 30
+                },
+                {
+                  "type": "Text",
+                  "text": "REGLAS:",
+                  "fontSize": "30dp",
+                  "fontWeight": "bold",
+                  "color": "#FFFFFF",
+                  "textAlign": "center",
+                  "paddingBottom": "10dp"
+                },
+                {
+                  "type": "Text",
+                  "text": "Múltiplo de 3 → ¡Salta!",
+                  "fontSize": "28dp",
+                  "fontWeight": "bold",
+                  "color": "#FFFFFF",
+                  "textAlign": "center"
+                },
+                {
+                  "type": "Text",
+                  "text": "Múltiplo de 5 → ¡Corre!",
+                  "fontSize": "28dp",
+                  "fontWeight": "bold",
+                  "color": "#FFFFFF",
+                  "textAlign": "center"
+                },
+                {
+                  "type": "Text",
+                  "text": "Múltiplo de 15 → ¡Vuela!",
+                  "fontSize": "28dp",
+                  "fontWeight": "bold",
+                  "color": "#FFFFFF",
+                  "textAlign": "center"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+  

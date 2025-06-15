@@ -1,0 +1,60 @@
+{
+    "type": "APL",
+    "version": "1.6",
+    "theme": "light",
+    "import": [
+        {
+            "name": "alexa-layouts",
+            "version": "1.3.0"
+        }
+    ],
+    "mainTemplate": {
+        "parameters": ["trivialData"],
+        "items": [
+            {
+                "type": "Frame",
+                "width": "100vw",
+                "height": "100vh",
+                "background": "#f25fc1",
+                "items": [
+                    {
+                        "type": "Container",
+                        "width": "100vw",
+                        "height": "100vh",
+                        "alignItems": "center",
+                        "justifyContent": "spaceEvenly",
+                        "direction": "column",
+                        "items": [
+                            {
+                                "type": "Text",
+                                "text": "Trivial",
+                                "fontSize": "60dp",
+                                "fontWeight": "bold",
+                                "color": "#FFFFFF",
+                                "textAlign": "center"
+                            },
+                            {
+                                "type": "Image",
+                                "id": "trivialImage",
+                                "source": "${trivialData.path}",
+                                "width": "90vw",
+                                "height": "60vh",
+                                "scale": "best-fill",
+                                "align": "center"
+                            },
+                            {
+                                "type": "Text",
+                                "id": "questionText",
+                                "text": "${trivialData.question}",
+                                "fontSize": "34dp",
+                                "fontWeight": "bold",
+                                "color": "#FFFFFF",
+                                "textAlign": "center"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

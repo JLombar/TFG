@@ -1,0 +1,18 @@
+{
+    "type": "APL",
+    "version": "1.4",
+    "mainTemplate": {
+      "parameters": [],
+      "items": [
+        {
+          "type": "Video",
+          "source": "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+          "width": "100vw",
+          "height": "100vh",
+          "autoplay": true,
+          "scale": "best-fill"
+        }
+      ]
+    }
+  }
+  
